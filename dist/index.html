@@ -26,12 +26,47 @@
       </div>
     </section>
     <section id="calculator">
-      Enter your details below Metric Imperial Height Weight Your BMI is...
-      <!-- add score -->
+      <h3>Enter your details below</h3>
+      <div id="radio">
+        <div id="metric" class="measurements">
+          <button id="metric-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewbox="0 0 31 31" fill="none">
+              <circle cx="15.5" cy="15.5" r="15.5" fill="#345FF6" fill-opacity="0.15"></circle>
+              <circle cx="15.5" cy="15.5" r="7.5" fill="#345FF6"></circle>
+            </svg>
+          </button>
+          <p>Metric</p>
+        </div>
+        <div id="imperial" class="measurements">
+          <button id="imperial-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewbox="0 0 31 31" fill="none">
+              <circle cx="15.5" cy="15.5" r="15" fill="white" stroke="#D8E2E7"></circle>
+            </svg>
+          </button>
+          <p>Imperial</p>
+        </div>
+      </div>
 
-      Your BMI suggests you're
-      <!-- add classification -->. Your ideal weight is between
-      <!-- add range -->.
+      <form action="" method="post">
+        <label for="height">Height</label><br>
+        <div class="input-background">
+          <input type="text" name="height" id="height">
+          <h3>cm</h3>
+        </div>
+        <label for="weight">Weight</label><br>
+        <div class="input-background">
+          <input type="text" name="weight" id="weight">
+          <h3>kg</h3>
+        </div>
+      </form>
+      <div id="bmi">
+        <h6>Your BMI is...</h6>
+        <h1>23.4</h1>
+        <p>
+          Your BMI suggests you're a healthy weight. Your ideal weight is
+          between <span>63.3kgs - 85.2kgs</span>
+        </p>
+      </div>
     </section>
 
     <section id="results">
